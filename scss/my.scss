@@ -1,0 +1,49 @@
+@import "main.scss";
+.userwrap{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    .logowrap{
+        background:  #000000;
+        height: 13*10px;
+        width: 100%;
+        @include flexBox;
+        @include flex-direction('column');
+        @include flex-center;
+        span{
+            width: 5*10px;
+            height: 5*10px;
+            border-radius:50% ;
+            background: #F3F3F4;
+            font-size: 4*10px;
+            @include flexBox;
+            @include flex-center;
+            color: #CBCCCF;
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 2*10px;
+            font-weight: bold;
+        }
+    }
+    li{
+        width: 100%;
+        height: 4*10px;
+        background: #FFFFFF;
+        line-height: 4*10px;
+        font-size: 1.6*10px;
+        text-indent: 2*10px;
+        border-top:0.1*10px solid #F0F0F0 ;
+        border-bottom:0.1*10px solid #F0F0F0 ;
+        margin: 1*10px 0;
+    }
+   .quit{
+       width: 100%;
+       height: 40px;
+       background: #000000;
+       color: #FFFFFF;
+       text-align: center;
+       line-height: 40px;
+       margin-top: 60px;
+   }
+}

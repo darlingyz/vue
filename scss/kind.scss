@@ -1,0 +1,128 @@
+@import "main.scss";
+#content {
+    width: 100%;
+    position: relative;
+}
+
+#dis_Cont {
+    width: 100%;
+    overflow: hidden;
+    .titles {
+        width: 90%;
+        margin: 2*10px auto;
+        h2 {
+            font-size: 1.9*10px;
+        }
+        p {
+            font-size: 0.6*10px;
+            color: #92969C;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    position: relative;
+    .swiper-slide {
+        float: left;
+        width: 100%;
+        height: 23*10px;
+        img {
+            width: 90%;
+          
+            margin-left: 5%;
+            height: 14*10px;
+        }
+        span {
+            display: inline-block;
+            font-size: 1*10px;
+            line-height: 2.5*10px;
+            color: #FF3939;
+            margin-left: 5%;
+        }
+        h3 {
+            font-size: 1.6*10px;
+            line-height: 2*10px;
+            text-indent: 5%;
+           
+        }
+        p {
+            font-size: 1.2*10px;
+            color: #666;
+            margin-left: 5%;
+           
+        }
+    }
+}
+
+#other_list {
+    width: 90%;
+    height: 8*10px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2%;
+    border-top: 0.1*10px solid #ccc;
+    border-bottom: 0.1*10px solid #ccc;
+    .swiper-slide {
+        width: 20%;
+        height: 7*10px;
+        @include flexBox;
+        @include flex-center;
+        border: 0.1*10px solid #ccc;
+        float: left;
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+        img{
+              height: 100%;
+              width: 100%;
+        }
+        h4 {
+            font-size: 1.2*10px;
+             position: absolute;
+        }
+        p {
+            font-size: 0.8*10px;
+             position: absolute;
+            margin-top: 15px;
+        }
+    }
+}
+
+.choicelist{
+    width: 90%;
+    min-height: 5*10px;
+    margin : 2*10px auto;
+    border-bottom:0.1*10px solid #CCCCCC ;
+    color: #F0F0F0;
+    .choic{
+        @include flexBox;
+        h5{
+            flex: 1;
+            font-size: 1.9*10px;
+            color: #333333;
+        }
+        span{
+            flex:1;
+            text-align: right;
+            font-size: 1.1*10px;
+            color:  #FF5050;
+        }
+    }
+    p{
+        width: 100%;
+        color: #92969C;
+    }
+    ul{
+        width: 100%;
+        height:9*10px;
+        margin: 1*10px;
+        @include flexBox;
+        li{
+            flex: 1;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

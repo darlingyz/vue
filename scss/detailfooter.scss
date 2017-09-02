@@ -1,0 +1,58 @@
+@import "main.scss";
+.detail_footer,.detailfooter_1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.detailfooter{
+  //  position: relative;
+    width: 100%;
+    height:100%;
+    @include flexBox;
+    @include flex-direction('row') ;
+    a{
+        position: relative;
+        flex:1;
+        span{
+            display: none;
+            color: #F00;
+            font-size: 12px;
+            position: absolute;
+            top: 18%;
+            left: 40%;
+            z-index: 10;
+        }
+    }
+    .cart{
+        width:100%;height: 100%;
+        @include flex-center;
+    }
+    .addCart{
+        flex: 2;
+        @include flex-center;
+        color: #FFFFFF;
+        background: #ffb22a;
+    }
+    .buyNow{
+        flex: 2;
+        @include flex-center;
+        color: #FFFFFF;
+        background: #ff3939;
+    }
+}
+#toast{
+    display: none;
+    position: absolute;
+    top : -200px;
+    z-index: 1000;
+    left: 35%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: #000000;
+    opacity: .8;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+
+        
